@@ -45,7 +45,7 @@ return response()->json(['message' => 'Booking created successfully', 'booking' 
 }
     private function geocodeLocation($location)
     {
-        $apiKey = 'pTLjsGCZRhX6dgBbeBQIzATJXmxnkhYj'; // Replace with your MapQuest API key
+        $apiKey = '<YOUR API KEY>'; // Replace with your MapQuest API key
 
         $response = Http::get("https://www.mapquestapi.com/geocoding/v1/address", [
             'key' => $apiKey,
